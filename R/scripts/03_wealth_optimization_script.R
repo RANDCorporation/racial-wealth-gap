@@ -166,7 +166,7 @@ fig8 = full_results %>%
   ggplot(data = ., mapping = aes(x = wealth_distributed, y = white_black_disparity, color = Scenario)) +
   geom_line(size = 1.5) + 
   xlab("Total Allocation") + 
-  ylab("White-Black Median Disparity") + 
+  ylab("Disparity (D)") + 
   randplot::theme_rand(font = plot_font)+ 
   scale_color_manual(values = four_collor_pallete) + 
   xlim(c(0,2e12)) +
